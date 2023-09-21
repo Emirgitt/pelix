@@ -25,7 +25,13 @@ nav{
   width: 70px;
   cursor: pointer;
 }
-
+a{ 
+  text-decoration: none;
+	color:#b4b4b4;
+	font-size: 17px;
+	align-self: center;
+  font-style: bold;
+}
 nav a{
   text-decoration: none;
 	color: #fff;
@@ -38,7 +44,6 @@ nav a:hover{
 }
 
 main{
-  height: 800px;
   width: 100%;
   color: #333;
   margin: auto;
@@ -48,14 +53,12 @@ main{
 }
 .imagen{
   width: 50%;
-  height: 600px;
 }
 .imagen img{
   width: 100%;
 }
 .descripcion{
   width: 50%;
-  height: 600px;
   padding: 30px;
 }
 .descripcion div{
@@ -133,24 +136,37 @@ footer .row{
   }
   main{
     width: 100%;
-    margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap-reverse;
+    
   }
   .imagen img{
     width: 100%;
   }
   .imagen{
+    top: 100%;
+    left: 100%;
     width: 100%;
+    transform: translate(0%,-50%);
+    text-align: center;
+    margin-top: 100px;
   }
   .descripcion{
     width: 100%;
     padding: 30px;
   }
-  footer{
-    display: none;
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  footer h2{
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  footer .col a{
+    font-size: 18px;
+    text-align: left;
   }
 }
